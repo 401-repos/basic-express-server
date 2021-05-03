@@ -18,6 +18,7 @@ describe('Testing server', () => {
     it('should give status of 200 if name is there',async () => {
         const testSuccess = await testServer.get('/person?name=ali');
         expect(testSuccess.status).toEqual(200);
+        expect(testSuccess.body).toEqual({ name: 'ali' });
     });
     it('should give status of 500 if name is not provided',async () => {
         const test500 = await testServer.get('/person');

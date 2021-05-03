@@ -14,6 +14,6 @@ describe('Testing Validator', () => {
     it('should invoke next if name exsists, not otherwise', () => {
         req = {};
         validator(req, res, next);
-        expect(next).toHaveBeenCalled();
+        expect(next).toHaveBeenCalledWith('Name query not found');
     });
 });

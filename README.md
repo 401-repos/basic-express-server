@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [test results](http://xyz.com) (GitHub Actions)
+- [test results](https://github.com/401-repos/basic-express-server/actions)
 - [back-end server url](https://basic-server-1.herokuapp.com/)
 
 ### Setup
@@ -15,12 +15,12 @@
 
 - `PORT` - Port Number
 
-#### How to initialize/run your application (where applicable)
+#### How to initialize/run your application
+
+- `npm install`
 
 - `npm start`
 
 #### Tests
 
 - `npm test`
-
-#### UML

@@ -24,3 +24,7 @@
 #### Tests
 
 - `npm test`
+
+#### UML
+
+![UML](class3uml.png

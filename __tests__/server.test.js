@@ -60,10 +60,13 @@ describe('Testing server', () => {
         expect(test204.statusCode).toEqual(204);
     });
     it('should give status of 204 if item was deleted sucessefully', async () => {
-        const test201 = await (await testServer.post('/food').send({
-            name: "newFood"
-        }));
+            const test201 = await (testServer.post('/food').send({
+                name: "newFood"
+            }));
+        const testGet = await testServer.get('/food');
+
         expect(test201.status).toEqual(201);
+        expect(testGet.body[0].content.name).toEqual("newFood");
     });
     it('should give status of 204 if item was deleted sucessefully', async () => {
         const test201 = await (await testServer.put('/food/1'));
